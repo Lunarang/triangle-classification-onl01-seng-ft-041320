@@ -13,7 +13,6 @@ class Triangle
        a + b <= c || a + c <= b || b + c <= a
       begin
         raise TriangleError
-      end
     
     elsif a == b && b == c
       :equilateral
