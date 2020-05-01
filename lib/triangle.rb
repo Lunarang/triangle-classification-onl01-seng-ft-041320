@@ -11,8 +11,7 @@ class Triangle
   def kind
     if a <= 0 || b <= 0 || c <= 0 || 
        a + b <= c || a + c <= b || b + c <= a
-      begin
-        raise TriangleError
+      raise TriangleError
     
     elsif a == b && b == c
       :equilateral
@@ -24,9 +23,6 @@ class Triangle
   end
 
   class TriangleError < StandardError
-     def message
-      "Hey! That's not a triangle!"
-    end
   end
 
 end
